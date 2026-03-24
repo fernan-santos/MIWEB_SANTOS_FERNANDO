@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi Proyecto</title>
+    <title>Proyecto Web</title>
 </head>
 <body>
-    <h1>Proyecto Web</h1>
+    <h1>Proyecto con Python (Flask)</h1>
 
     <h2>Suma</h2>
-    <form action="suma.php" method="post">
+    <form action="/suma" method="post">
         <input type="number" name="a" required>
         <input type="number" name="b" required>
         <button type="submit">Sumar</button>
     </form>
 
     <h2>Factorial</h2>
-    <form action="factorial.php" method="post">
+    <form action="/factorial" method="post">
+        <input type="number" name="n" required>
+        <button type="submit">Calcular</button>
+    </form>
+
+    <h2>Fibonacci</h2>
+    <form action="/fibonacci" method="post">
         <input type="number" name="n" required>
         <button type="submit">Calcular</button>
     </form>
 
     <h2>Nombre</h2>
-    <a href="nombre.php">Ver nombre</a>
-
-    <h2>Fibonacci</h2>
-    <form action="fibonacci.php" method="post">
-        <input type="number" name="n" required>
-        <button type="submit">Calcular</button>
-    </form>
-
+    <a href="/nombre">Ver nombre</a>
 </body>
 </html>
