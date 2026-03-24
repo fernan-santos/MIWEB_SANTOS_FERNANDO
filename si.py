@@ -1,6 +1,7 @@
-num1 = float(input("Introduce el primer número: "))
-num2 = float(input("Introduce el segundo número: "))
+ef suma(a, b):
+    return a + b
 
-suma = num1 + num2
+num1 = int(input("Ingrese el primer número: "))
+num2 = int(input("Ingrese el segundo número: "))
 
-print(f"La suma de {num1} y {num2} es: {suma}")
+print("La suma es:", suma(num1, num2))

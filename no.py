@@ -1,7 +1,8 @@
-import math
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
 
-n = int(input("Introduce un número: "))
-
-resultado = math.factorial(n)
-
-print(f"El factorial de {n} es {resultado}")
+num = int(input("Ingrese un número: "))
+print("El factorial es:", factorial(num))
